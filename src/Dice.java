@@ -14,8 +14,8 @@ public class Dice {
 		
 		do {
 			System.out.printf("Roll %d:\n",rollNum);
-			int result1 = rollDie(sides);
-			int result2 = rollDie(sides);
+			int result1 = DiceRollerApp.rollDie(sides);
+			int result2 = DiceRollerApp.rollDie(sides);
 			System.out.println(result1);
 			System.out.println(result2);
 			
@@ -36,9 +36,6 @@ public class Dice {
 		}while (rerun.equalsIgnoreCase("y"));
 		
 	}
-	public static int rollDie(int sides) {
-		Random ranNum = new Random();
-		int rollResult = ranNum.nextInt(sides) +1;
-		return rollResult;
-	}
+	
+	
 }

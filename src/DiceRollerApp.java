@@ -1,3 +1,4 @@
+import java.util.Random;
 
 public class DiceRollerApp {
 	
@@ -9,5 +10,10 @@ public class DiceRollerApp {
 	}
 	public static void boxCarReturner() {
 		System.out.println("Box Cars!");
+	}
+	public static int rollDie(int sides) {
+		Random ranNum = new Random();
+		int rollResult = ranNum.nextInt(sides) +1;
+		return rollResult;
 	}
 }
